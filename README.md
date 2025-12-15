@@ -2,18 +2,8 @@
 # dataset from a movie conversation
 
 
-
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 30 12:14:24 2020
-
 @author: hassan
 """
-
-
-
 # Importing Libraries
 import numpy as np
 import tensorflow as tf
@@ -54,10 +44,7 @@ for conversation in conversations_ids:
     questions.append(id2line[conversation[i]])
     answers.append(id2line[conversation[i+1]])
 
-
-import tensorflow as tf
 print("Num GPUs Available: ", len(tf.compat.v1.config.experimental.list_physical_devices('GPU')))
-
 
 tf.compat.v1.debugging.set_log_device_placement(True)
 
@@ -78,9 +65,7 @@ tf.compat.v1.debugging.set_log_device_placement(True)
 a = tf.compat.v1.constant([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
 b = tf.compat.v1.constant([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]])
 c = tf.compat.v1.matmul(a, b)
-
 print(c)
-
 
 
 
