@@ -1,16 +1,13 @@
 # Chatbot
 # dataset from a movie conversation
 
-
-@author: hassan
-"""
 # Importing Libraries
 import numpy as np
 import tensorflow as tf
 import re
 import time
 from keras import layers
-import tensorflow_core.contrib
+from keras.layers import Dense
 
 # Part 1: Data Preprocessing
 
@@ -414,10 +411,6 @@ def decode_test_set(encoder_state, decoder_cell, decoder_embeddings_matrix, sos_
 
 
 
-
-
-
-
 # now the Decoder RNN:
 
 # the word2int dictionary will be our answerswords2int dictionary that we made before
@@ -511,8 +504,6 @@ def seq2seq_model(inputs, targets, keep_prob, batch_size, sequence_length, answe
 
 
   return training_predictions, test_predictions
-
-
 
 
 
