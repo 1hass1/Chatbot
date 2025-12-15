@@ -790,3 +790,11 @@ while(True):
         if token == '.':
             break
     print('ChatBot: ' + answer)
+
+
+
+
+
+
+
+
